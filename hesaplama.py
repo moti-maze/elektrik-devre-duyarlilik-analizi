@@ -67,9 +67,6 @@ print(f"v2 = {v_R1_changed[1]:.4f} V")
 # -------------------------------
 Y_inv = np.linalg.inv(Y_nominal)
 
-# Sağ taraf vektörü [-Ig1, Ig2] olduğu için:
-# dI/dIg1 = [-1, 0]
-# dI/dIg2 = [0, 1]
 dv_dIg1 = Y_inv @ np.array([-1, 0])
 dv_dIg2 = Y_inv @ np.array([0, 1])
 
